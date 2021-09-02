@@ -21,13 +21,17 @@ public class MyScript : MonoBehaviour
             }
         }
 
-        float r = 5 ;
-        float a = 3.14f;
-        {
-            float result = 0.0f;
-            result = r * r * a;
-            print (result);
-        }
+        float x= 1.0f;
+        float r = circle(x);
+
+    float circle(float x)
+    {
+        float result;
+        x = 10.0f;
+        result = 3.14f * (x*x);
+        print (result);
+        return result;
+    }
        
         
     }
